@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29FD5E834C62AE4DD9051A97 /* Pods_FoodFlickInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415EA2144D45671F911E8523 /* Pods_FoodFlickInterview.framework */; };
+		F1E40A7126B9517B000649E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40A7026B9517B000649E3 /* AppDelegate.swift */; };
+		F1E40A7326B9517B000649E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40A7226B9517B000649E3 /* SceneDelegate.swift */; };
+		F1E40A7526B9517B000649E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40A7426B9517B000649E3 /* ViewController.swift */; };
+		F1E40A7826B9517B000649E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E40A7626B9517B000649E3 /* Main.storyboard */; };
+		F1E40A7A26B95185000649E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E40A7926B95185000649E3 /* Assets.xcassets */; };
+		F1E40A7D26B95185000649E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E40A7B26B95185000649E3 /* LaunchScreen.storyboard */; };
+		F1E40A8826B95186000649E3 /* FoodFlickInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40A8726B95186000649E3 /* FoodFlickInterviewTests.swift */; };
+		F1E40A9326B95186000649E3 /* FoodFlickInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40A9226B95186000649E3 /* FoodFlickInterviewUITests.swift */; };
+		F1E40AA726B9519B000649E3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40AA326B9519A000649E3 /* TableViewCell.swift */; };
+		F1E40AA826B9519B000649E3 /* FoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E40AA426B9519B000649E3 /* FoodViewController.xib */; };
+		F1E40AA926B9519B000649E3 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40AA526B9519B000649E3 /* FoodViewController.swift */; };
+		F1E40AAA26B9519B000649E3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E40AA626B9519B000649E3 /* TableViewCell.xib */; };
+		F1E40AD326B953B0000649E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E40AD226B953B0000649E3 /* GoogleService-Info.plist */; };
+		F1E40B0926BA169F000649E3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40B0726BA169F000649E3 /* CollectionViewCell.swift */; };
+		F1E40B0A26BA169F000649E3 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E40B0826BA169F000649E3 /* CollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1E40A8426B95186000649E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E40A6526B9517B000649E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E40A6C26B9517B000649E3;
+			remoteInfo = FoodFlickInterview;
+		};
+		F1E40A8F26B95186000649E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E40A6526B9517B000649E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E40A6C26B9517B000649E3;
+			remoteInfo = FoodFlickInterview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		212CD7209528B123F647B68C /* Pods-FoodFlickInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFlickInterview.release.xcconfig"; path = "Target Support Files/Pods-FoodFlickInterview/Pods-FoodFlickInterview.release.xcconfig"; sourceTree = "<group>"; };
+		267A6411C39D77A368239156 /* Pods-FoodFlickInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodFlickInterview.debug.xcconfig"; path = "Target Support Files/Pods-FoodFlickInterview/Pods-FoodFlickInterview.debug.xcconfig"; sourceTree = "<group>"; };
+		415EA2144D45671F911E8523 /* Pods_FoodFlickInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodFlickInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E40A6D26B9517B000649E3 /* FoodFlickInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFlickInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E40A7026B9517B000649E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1E40A7226B9517B000649E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1E40A7426B9517B000649E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1E40A7726B9517B000649E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1E40A7926B95185000649E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E40A7C26B95185000649E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1E40A7E26B95185000649E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E40A8326B95186000649E3 /* FoodFlickInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFlickInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E40A8726B95186000649E3 /* FoodFlickInterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFlickInterviewTests.swift; sourceTree = "<group>"; };
+		F1E40A8926B95186000649E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E40A8E26B95186000649E3 /* FoodFlickInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFlickInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E40A9226B95186000649E3 /* FoodFlickInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFlickInterviewUITests.swift; sourceTree = "<group>"; };
+		F1E40A9426B95186000649E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E40AA326B9519A000649E3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F1E40AA426B9519B000649E3 /* FoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodViewController.xib; sourceTree = "<group>"; };
+		F1E40AA526B9519B000649E3 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		F1E40AA626B9519B000649E3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		F1E40AD226B953B0000649E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1E40B0726BA169F000649E3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F1E40B0826BA169F000649E3 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1E40A6A26B9517B000649E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FD5E834C62AE4DD9051A97 /* Pods_FoodFlickInterview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E40A8026B95186000649E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E40A8B26B95186000649E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD771E3B9D450AE7677EF65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				267A6411C39D77A368239156 /* Pods-FoodFlickInterview.debug.xcconfig */,
+				212CD7209528B123F647B68C /* Pods-FoodFlickInterview.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D9E5ECB37AAD63964CA34FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				415EA2144D45671F911E8523 /* Pods_FoodFlickInterview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1E40A6426B9517B000649E3 = {
+			isa = PBXGroup;
+			children = (
+				F1E40A6F26B9517B000649E3 /* FoodFlickInterview */,
+				F1E40A8626B95186000649E3 /* FoodFlickInterviewTests */,
+				F1E40A9126B95186000649E3 /* FoodFlickInterviewUITests */,
+				F1E40A6E26B9517B000649E3 /* Products */,
+				0FD771E3B9D450AE7677EF65 /* Pods */,
+				3D9E5ECB37AAD63964CA34FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1E40A6E26B9517B000649E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1E40A6D26B9517B000649E3 /* FoodFlickInterview.app */,
+				F1E40A8326B95186000649E3 /* FoodFlickInterviewTests.xctest */,
+				F1E40A8E26B95186000649E3 /* FoodFlickInterviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E40A6F26B9517B000649E3 /* FoodFlickInterview */ = {
+			isa = PBXGroup;
+			children = (
+				F1E40A7026B9517B000649E3 /* AppDelegate.swift */,
+				F1E40A7226B9517B000649E3 /* SceneDelegate.swift */,
+				F1E40A7426B9517B000649E3 /* ViewController.swift */,
+				F1E40AA526B9519B000649E3 /* FoodViewController.swift */,
+				F1E40AA426B9519B000649E3 /* FoodViewController.xib */,
+				F1E40AA326B9519A000649E3 /* TableViewCell.swift */,
+				F1E40B0726BA169F000649E3 /* CollectionViewCell.swift */,
+				F1E40B0826BA169F000649E3 /* CollectionViewCell.xib */,
+				F1E40AA626B9519B000649E3 /* TableViewCell.xib */,
+				F1E40A7626B9517B000649E3 /* Main.storyboard */,
+				F1E40A7926B95185000649E3 /* Assets.xcassets */,
+				F1E40A7B26B95185000649E3 /* LaunchScreen.storyboard */,
+				F1E40AD226B953B0000649E3 /* GoogleService-Info.plist */,
+				F1E40A7E26B95185000649E3 /* Info.plist */,
+			);
+			path = FoodFlickInterview;
+			sourceTree = "<group>";
+		};
+		F1E40A8626B95186000649E3 /* FoodFlickInterviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E40A8726B95186000649E3 /* FoodFlickInterviewTests.swift */,
+				F1E40A8926B95186000649E3 /* Info.plist */,
+			);
+			path = FoodFlickInterviewTests;
+			sourceTree = "<group>";
+		};
+		F1E40A9126B95186000649E3 /* FoodFlickInterviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E40A9226B95186000649E3 /* FoodFlickInterviewUITests.swift */,
+				F1E40A9426B95186000649E3 /* Info.plist */,
+			);
+			path = FoodFlickInterviewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1E40A6C26B9517B000649E3 /* FoodFlickInterview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E40A9726B95186000649E3 /* Build configuration list for PBXNativeTarget "FoodFlickInterview" */;
+			buildPhases = (
+				B61F1D851203E83A79E27D77 /* [CP] Check Pods Manifest.lock */,
+				F1E40A6926B9517B000649E3 /* Sources */,
+				F1E40A6A26B9517B000649E3 /* Frameworks */,
+				F1E40A6B26B9517B000649E3 /* Resources */,
+				9A9D6FEE00B65B3B0101CA2D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodFlickInterview;
+			productName = FoodFlickInterview;
+			productReference = F1E40A6D26B9517B000649E3 /* FoodFlickInterview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1E40A8226B95186000649E3 /* FoodFlickInterviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E40A9A26B95186000649E3 /* Build configuration list for PBXNativeTarget "FoodFlickInterviewTests" */;
+			buildPhases = (
+				F1E40A7F26B95186000649E3 /* Sources */,
+				F1E40A8026B95186000649E3 /* Frameworks */,
+				F1E40A8126B95186000649E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1E40A8526B95186000649E3 /* PBXTargetDependency */,
+			);
+			name = FoodFlickInterviewTests;
+			productName = FoodFlickInterviewTests;
+			productReference = F1E40A8326B95186000649E3 /* FoodFlickInterviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1E40A8D26B95186000649E3 /* FoodFlickInterviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E40A9D26B95186000649E3 /* Build configuration list for PBXNativeTarget "FoodFlickInterviewUITests" */;
+			buildPhases = (
+				F1E40A8A26B95186000649E3 /* Sources */,
+				F1E40A8B26B95186000649E3 /* Frameworks */,
+				F1E40A8C26B95186000649E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1E40A9026B95186000649E3 /* PBXTargetDependency */,
+			);
+			name = FoodFlickInterviewUITests;
+			productName = FoodFlickInterviewUITests;
+			productReference = F1E40A8E26B95186000649E3 /* FoodFlickInterviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1E40A6526B9517B000649E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F1E40A6C26B9517B000649E3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F1E40A8226B95186000649E3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F1E40A6C26B9517B000649E3;
+					};
+					F1E40A8D26B95186000649E3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F1E40A6C26B9517B000649E3;
+					};
+				};
+			};
+			buildConfigurationList = F1E40A6826B9517B000649E3 /* Build configuration list for PBXProject "FoodFlickInterview" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1E40A6426B9517B000649E3;
+			productRefGroup = F1E40A6E26B9517B000649E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1E40A6C26B9517B000649E3 /* FoodFlickInterview */,
+				F1E40A8226B95186000649E3 /* FoodFlickInterviewTests */,
+				F1E40A8D26B95186000649E3 /* FoodFlickInterviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1E40A6B26B9517B000649E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E40A7D26B95185000649E3 /* LaunchScreen.storyboard in Resources */,
+				F1E40B0A26BA169F000649E3 /* CollectionViewCell.xib in Resources */,
+				F1E40AAA26B9519B000649E3 /* TableViewCell.xib in Resources */,
+				F1E40AD326B953B0000649E3 /* GoogleService-Info.plist in Resources */,
+				F1E40A7A26B95185000649E3 /* Assets.xcassets in Resources */,
+				F1E40AA826B9519B000649E3 /* FoodViewController.xib in Resources */,
+				F1E40A7826B9517B000649E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E40A8126B95186000649E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E40A8C26B95186000649E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A9D6FEE00B65B3B0101CA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodFlickInterview/Pods-FoodFlickInterview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodFlickInterview/Pods-FoodFlickInterview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodFlickInterview/Pods-FoodFlickInterview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61F1D851203E83A79E27D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodFlickInterview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1E40A6926B9517B000649E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E40A7526B9517B000649E3 /* ViewController.swift in Sources */,
+				F1E40AA926B9519B000649E3 /* FoodViewController.swift in Sources */,
+				F1E40B0926BA169F000649E3 /* CollectionViewCell.swift in Sources */,
+				F1E40AA726B9519B000649E3 /* TableViewCell.swift in Sources */,
+				F1E40A7126B9517B000649E3 /* AppDelegate.swift in Sources */,
+				F1E40A7326B9517B000649E3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E40A7F26B95186000649E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E40A8826B95186000649E3 /* FoodFlickInterviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E40A8A26B95186000649E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E40A9326B95186000649E3 /* FoodFlickInterviewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1E40A8526B95186000649E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E40A6C26B9517B000649E3 /* FoodFlickInterview */;
+			targetProxy = F1E40A8426B95186000649E3 /* PBXContainerItemProxy */;
+		};
+		F1E40A9026B95186000649E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E40A6C26B9517B000649E3 /* FoodFlickInterview */;
+			targetProxy = F1E40A8F26B95186000649E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1E40A7626B9517B000649E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E40A7726B9517B000649E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1E40A7B26B95185000649E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E40A7C26B95185000649E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1E40A9526B95186000649E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1E40A9626B95186000649E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1E40A9826B95186000649E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267A6411C39D77A368239156 /* Pods-FoodFlickInterview.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J286DXAZ52;
+				INFOPLIST_FILE = FoodFlickInterview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reyhan.FoodFlickInterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1E40A9926B95186000649E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212CD7209528B123F647B68C /* Pods-FoodFlickInterview.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J286DXAZ52;
+				INFOPLIST_FILE = FoodFlickInterview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reyhan.FoodFlickInterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1E40A9B26B95186000649E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J286DXAZ52;
+				INFOPLIST_FILE = FoodFlickInterviewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reyhan.FoodFlickInterviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodFlickInterview.app/FoodFlickInterview";
+			};
+			name = Debug;
+		};
+		F1E40A9C26B95186000649E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J286DXAZ52;
+				INFOPLIST_FILE = FoodFlickInterviewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reyhan.FoodFlickInterviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodFlickInterview.app/FoodFlickInterview";
+			};
+			name = Release;
+		};
+		F1E40A9E26B95186000649E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J286DXAZ52;
+				INFOPLIST_FILE = FoodFlickInterviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reyhan.FoodFlickInterviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FoodFlickInterview;
+			};
+			name = Debug;
+		};
+		F1E40A9F26B95186000649E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J286DXAZ52;
+				INFOPLIST_FILE = FoodFlickInterviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reyhan.FoodFlickInterviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FoodFlickInterview;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E40A6826B9517B000649E3 /* Build configuration list for PBXProject "FoodFlickInterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E40A9526B95186000649E3 /* Debug */,
+				F1E40A9626B95186000649E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E40A9726B95186000649E3 /* Build configuration list for PBXNativeTarget "FoodFlickInterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E40A9826B95186000649E3 /* Debug */,
+				F1E40A9926B95186000649E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E40A9A26B95186000649E3 /* Build configuration list for PBXNativeTarget "FoodFlickInterviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E40A9B26B95186000649E3 /* Debug */,
+				F1E40A9C26B95186000649E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E40A9D26B95186000649E3 /* Build configuration list for PBXNativeTarget "FoodFlickInterviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E40A9E26B95186000649E3 /* Debug */,
+				F1E40A9F26B95186000649E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1E40A6526B9517B000649E3 /* Project object */;
+}
