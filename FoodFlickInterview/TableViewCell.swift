@@ -22,7 +22,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
 
-    var delegate: clickCell!
+    var delegate: tableViewCellProtocol!
     var type = ""
     var food: Food!{
         didSet{
@@ -89,15 +89,15 @@ class TableViewCell: UITableViewCell {
         
     }
      @objc func addToCart(){
-         delegate.food(id: food, quantity: quantity + 1, status: "plus")
+         delegate.addFoodToCart(food: food, quantity: quantity + 1, status: "plus")
         quantity += 1
      }
      @objc func increaseFood(){
-         delegate.food(id: food, quantity: quantity + 1, status: "plus")
+         delegate.addFoodToCart(food: food, quantity: quantity + 1, status: "plus")
         quantity += 1
      }
      @objc func decreaseFood(){
-         delegate.food(id: food, quantity: quantity - 1, status: "substract")
+         delegate.addFoodToCart(food: food, quantity: quantity - 1, status: "substract")
         quantity -= 1
      }
     override func setSelected(_ selected: Bool, animated: Bool) {

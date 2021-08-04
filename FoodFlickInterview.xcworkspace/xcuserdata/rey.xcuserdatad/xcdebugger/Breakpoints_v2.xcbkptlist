@@ -302,8 +302,8 @@
             filePath = "FoodFlickInterview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,13 +366,13 @@
             filePath = "FoodFlickInterview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7DFE8372-8F97-4931-8632-DE481964B56D - f402d5149fb06ed2"
+                  uuid = "7DFE8372-8F97-4931-8632-DE481964B56D - f402d5149fb06ef1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -382,12 +382,12 @@
                   urlString = "file:///Users/rey/Library/Autosave%20Information/FoodFlickInterview/FoodFlickInterview/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "227"
-                  endingLineNumber = "227"
-                  offsetFromSymbolStart = "923">
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
+                  offsetFromSymbolStart = "797">
                </Location>
                <Location
-                  uuid = "7DFE8372-8F97-4931-8632-DE481964B56D - b52b9d4f2b0c6a73"
+                  uuid = "7DFE8372-8F97-4931-8632-DE481964B56D - b52b9d4f2b0c6a50"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -397,8 +397,8 @@
                   urlString = "file:///Users/rey/Library/Autosave%20Information/FoodFlickInterview/FoodFlickInterview/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "227"
-                  endingLineNumber = "227"
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
                   offsetFromSymbolStart = "113">
                </Location>
             </Locations>
@@ -430,8 +430,8 @@
             filePath = "FoodFlickInterview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "setupView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "FoodFlickInterview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "carts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,8 +462,8 @@
             filePath = "FoodFlickInterview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "setupView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -478,8 +478,8 @@
             filePath = "FoodFlickInterview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "setupView()"
             landmarkType = "7">
          </BreakpointContent>

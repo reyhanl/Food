@@ -10,7 +10,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var buttonMenu: UIButton!
-    var delegate: collectionViewCell!
+    var delegate: collectionViewCellProtocol!
     var id: Int!
     var type: String!{
         didSet{
@@ -25,7 +25,7 @@ class CollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     @objc func changeTable(){
-        delegate.typeFood(id: id ?? 0, type: type ?? "")
+        delegate.changeTypeFood(id: id ?? 0, type: type ?? "")
     }
 
 }

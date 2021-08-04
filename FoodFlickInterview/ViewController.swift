@@ -19,7 +19,9 @@ class FoodViewController: UIViewController {
     @IBOutlet weak var cart: UIView!
     
     @IBOutlet weak var delegate: UICollectionViewFlowLayout!
-    //cartPosition
+    
+    
+    //MARK: cartPosition
     var normalY = 0
     var offsetY = 0
     var numberOfOrder: Int = 0
@@ -34,10 +36,11 @@ class FoodViewController: UIViewController {
         }
     }
     var positionCart: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
+    
+    
     var collections: [String] = []
-    var expectedOutcome = 0
     var currentActiveIndex: Int = 0
-    var currentCollection: String = "Healthy"
+    var currentCollection: String = ""
     var group = DispatchGroup()
     var typeFood: [String:[Food]] = [:]
     var cartList: [String:[Food]] = [:]
@@ -92,6 +95,7 @@ class FoodViewController: UIViewController {
                 
             }
             group.notify(queue: .main) {
+                currentCollection = collections[0]
                 collectionView.reloadData()
                 self.changeTable()
             }
@@ -256,32 +260,31 @@ extension FoodViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     
 }
-extension FoodViewController: clickCell{
-    func food(id: Food, quantity: Int, status: String) {
+extension FoodViewController: tableViewCellProtocol{
+    func addFoodToCart(food: Food, quantity: Int, status: String) {
         if status == "substract"{
-            for (index,i) in food.enumerated(){
-                if i.name == id.name{
-                    food.remove(at: index)
-                    addFood(food: id, status: status)
+            for (index,i) in self.food.enumerated(){
+                if i.name == food.name{
+                    self.food.remove(at: index)
+                    addFood(food: food, status: status)
 
                     break
                 }
             }
         }else{
-            addFood(food: id, status: status)
-            food.append(id)
+            addFood(food: food, status: status)
+            self.food.append(food)
         }
     }
 }
-extension FoodViewController: collectionViewCell{
-    func typeFood(id: Int, type: String) {
+extension FoodViewController: collectionViewCellProtocol{
+    func changeTypeFood(id: Int, type: String) {
         currentCollection = type
         let previousActiveIndex = currentActiveIndex
         currentActiveIndex = id
         var arrayOfIndex : [Int] = []
         for cell in collectionView.visibleCells {
                let indexPath = collectionView.indexPath(for: cell)
-               print(indexPath)
             arrayOfIndex.append(indexPath?.row ?? 0)
         }
         if arrayOfIndex.contains(previousActiveIndex){
@@ -295,33 +298,4 @@ extension FoodViewController: collectionViewCell{
         changeTable()
            
     }
-}
-class Food{
-    var id: String!
-    var name: String!
-    
-    var image: UIImage!
-    var url: String!
-    var price: Int!
-    var promo: Bool!
-    var love:  Bool!
-    var normalPrice: Int!
-    var description: String!
-    init( name: String, image: UIImage, price: Int, promo: Bool, love: Bool, normalPrice: Int!, description : String){
-        self.name = name
-        self.image =  image
-        self.description = description
-        self.price = price
-        self.promo = promo
-        self.love = love
-        self.normalPrice = normalPrice
-    }
-    
-}
-
-protocol clickCell {
-    func food(id: Food, quantity: Int, status: String)
-}
-protocol collectionViewCell{
-    func typeFood(id: Int, type: String)
 }
