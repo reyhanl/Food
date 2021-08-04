@@ -135,7 +135,7 @@ class FoodViewController: UIViewController {
                     let data = i.data()
                     let image = data["image"] as! String
                     var url : URL!
-                    if image == "nil"{
+                    if image == ""{
                         url = URL(string: "https://www.solidbackgrounds.com/images/2560x1600/2560x1600-dark-gray-solid-color-background.jpg")!
                     }else{
                         url = URL(string: image)
