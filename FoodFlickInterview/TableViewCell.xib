@@ -24,13 +24,18 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFE-z9-Rmu">
                         <rect key="frame" x="294" y="95" width="100" height="30"/>
-                        <color key="backgroundColor" red="0.91372549020000005" green="0.0078431372550000003" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.41568627450980389" blue="0.38823529411764707" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="tro-01-Izf"/>
                         </constraints>
                         <state key="normal" title="Tambah">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </button>
                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ad-b0-7YP">
                         <rect key="frame" x="310" y="103.5" width="42" height="21"/>
@@ -40,13 +45,18 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="kmK-aC-DMx">
                         <rect key="frame" x="108" y="20" width="75" height="21"/>
-                        <color key="backgroundColor" red="0.56107999840561229" green="0.9820469447544643" blue="0.18267282498937074" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.047058823529411764" green="1" blue="0.23921568627450979" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="75" id="apt-T4-IrQ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.090486902768920074" green="0.57706498126594385" blue="0.18267282498937074" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-uR-LfT">
                         <rect key="frame" x="158.5" y="104" width="42" height="21"/>
@@ -62,14 +72,16 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="22" id="KxL-EH-9j4"/>
                         </constraints>
-                        <state key="normal" title="Button" image="minus.circle" catalog="system"/>
+                        <color key="tintColor" red="0.8784313725490196" green="0.41568627450980389" blue="0.38823529411764707" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Button" image="minus.circle.fill" catalog="system"/>
                     </button>
                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F39-yl-NUh">
                         <rect key="frame" x="372" y="103" width="22" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="22" id="xaR-YY-6jL"/>
                         </constraints>
-                        <state key="normal" title="Button" image="plus.circle" catalog="system"/>
+                        <color key="tintColor" red="0.8784313725490196" green="0.41568627450980389" blue="0.38823529411764707" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Button" image="plus.circle.fill" catalog="system"/>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dCM-8M-JO6">
                         <rect key="frame" x="19" y="19" width="81" height="82"/>
@@ -92,6 +104,15 @@
                         </constraints>
                         <state key="normal" title="Button" image="heart" catalog="system"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRb-De-SEr">
+                        <rect key="frame" x="108" y="65" width="31" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Chk-kY-h0G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="fHL-uR-LfT" secondAttribute="bottom" constant="15" id="03D-WL-Ne9"/>
@@ -112,8 +133,10 @@
                     <constraint firstItem="F39-yl-NUh" firstAttribute="leading" secondItem="1Ad-b0-7YP" secondAttribute="trailing" constant="20" id="azf-jE-tk4"/>
                     <constraint firstItem="dCM-8M-JO6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="cCE-3K-hon"/>
                     <constraint firstItem="1Ad-b0-7YP" firstAttribute="leading" secondItem="jf8-hI-W7t" secondAttribute="trailing" constant="20" id="esc-9p-SAE"/>
+                    <constraint firstItem="hRb-De-SEr" firstAttribute="top" secondItem="jZx-QG-MpL" secondAttribute="bottom" constant="4" id="i6Q-Bg-XrG"/>
                     <constraint firstAttribute="trailingMargin" secondItem="cFE-z9-Rmu" secondAttribute="trailing" id="k1R-xA-spA"/>
                     <constraint firstItem="dCM-8M-JO6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="mXY-2e-EYq"/>
+                    <constraint firstItem="hRb-De-SEr" firstAttribute="leading" secondItem="jZx-QG-MpL" secondAttribute="leading" id="rWU-Sg-KNH"/>
                     <constraint firstAttribute="bottomMargin" secondItem="jWj-fc-QPd" secondAttribute="bottom" constant="15" id="tAv-NM-N8o"/>
                     <constraint firstItem="F39-yl-NUh" firstAttribute="bottom" secondItem="jWj-fc-QPd" secondAttribute="bottom" id="uXq-S9-zPg"/>
                 </constraints>
@@ -121,6 +144,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="addToCartButton" destination="cFE-z9-Rmu" id="qWn-N9-krh"/>
+                <outlet property="descriptionLabel" destination="hRb-De-SEr" id="Ht4-9t-5yv"/>
                 <outlet property="images" destination="dCM-8M-JO6" id="F3I-Jq-Qha"/>
                 <outlet property="loveButton" destination="bWl-rY-cPD" id="wJK-k9-bpo"/>
                 <outlet property="minusButton" destination="jf8-hI-W7t" id="GO4-Cn-kDS"/>
@@ -136,8 +160,8 @@
     </objects>
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="minus.circle" catalog="system" width="128" height="121"/>
-        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="minus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
     </resources>
 </document>

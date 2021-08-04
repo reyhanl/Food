@@ -17,6 +17,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var promoLabel: UILabel!
     @IBOutlet weak var loveButton: UIButton!
     
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var images: UIImageView!
     @IBOutlet weak var normalPriceLabel: UILabel!
     @IBOutlet weak var minusButton: UIButton!
@@ -30,6 +31,7 @@ class TableViewCell: UITableViewCell {
 //            imageView.image = food.image
             priceLabel.text = "\(food.price ?? 0)"
             images.image = food.image
+            descriptionLabel.text = food.description
             if food.promo{
                 promoLabel.isHidden = false
                 normalPriceLabel.isHidden = false

@@ -55,13 +55,16 @@ class FoodViewController: UIViewController {
     }
    
     func setupView(){
+        tableView.tableHeaderView = UIView()
+        
         cart.frame = CGRect(x: 20, y: UIScreen.main.bounds.height - 100, width: UIScreen.main.bounds.width - 40, height: 56)
         normalY = Int(UIScreen.main.bounds.height - 100)
         offsetY = Int(UIScreen.main.bounds.height + 100)
         viewInsideCart.bounds = CGRect(x: 20, y: 9, width: 38, height: 38)
         numberOfCartLabel.frame =  CGRect(x: viewInsideCart.bounds.midX, y: viewInsideCart.bounds.height / 2, width: 11, height: 20)
-        imageCart.frame = CGRect(x: viewInsideCart.frame.maxX, y: viewInsideCart.frame.minY, width: 40, height: 40)
+        imageCart.frame = CGRect(x: cart.frame.maxX - 80, y: viewInsideCart.frame.minY, width: 40, height: 40)
         cartOut()
+        cart.isHidden = false
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -135,9 +138,9 @@ class FoodViewController: UIViewController {
                     }else{
                         url = URL(string: image)
                     }
-                    
+                   
                     downloadImage(from: url, completion: { (image) in
-                        foods.append(Food(name: data["name"] as! String, image: image, price: data["price"] as! Int,promo: data["promo"] as! Bool, love: data["love"] as! Bool, normalPrice: (data["promo"] as! Bool) ? data["normalPrice"] as! Int : 0 ))
+                        foods.append(Food(name: data["name"] as! String, image: image, price: data["price"] as! Int,promo: data["promo"] as! Bool, love: data["love"] as! Bool, normalPrice: (data["promo"] as! Bool) ? data["normalPrice"] as! Int : 0 , description: data["description"] as! String))
                         dispatch.leave()
                     })
                     
@@ -216,6 +219,7 @@ extension FoodViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if typeFood.count != 0{
             var cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
+            
             cell.type = currentCollection
             var array = cartList[currentCollection]?.filter{$0.name == typeFood[currentCollection]![indexPath.row].name}
             cell.food = typeFood[currentCollection]![indexPath.row]
@@ -297,10 +301,11 @@ class Food{
     var promo: Bool!
     var love:  Bool!
     var normalPrice: Int!
-    init( name: String, image: UIImage, price: Int, promo: Bool, love: Bool, normalPrice: Int!){
+    var description: String!
+    init( name: String, image: UIImage, price: Int, promo: Bool, love: Bool, normalPrice: Int!, description : String){
         self.name = name
         self.image =  image
-        
+        self.description = description
         self.price = price
         self.promo = promo
         self.love = love
