@@ -1,9 +1,9 @@
 //
 //  FoodViewController.swift
-//  Sokin
+//  FoodFlickInterview
 //
 //  Created by Reyhan on 03/08/21.
-//  Copyright © 2021 Final Climax. All rights reserved.
+//   Copyright © 2021 Reyhan Muhammad. All rights reserved.
 //
 
 import UIKit
@@ -61,29 +61,25 @@ class FoodViewController: UIViewController {
         normalY = Int(UIScreen.main.bounds.height - 100)
         offsetY = Int(UIScreen.main.bounds.height + 100)
         viewInsideCart.bounds = CGRect(x: 20, y: 9, width: 38, height: 38)
-        numberOfCartLabel.frame =  CGRect(x: viewInsideCart.bounds.midX, y: viewInsideCart.bounds.height / 2, width: 11, height: 20)
+        numberOfCartLabel.frame =  CGRect(x: viewInsideCart.bounds.midX, y: viewInsideCart.bounds.midY , width: 11, height: 20)
         imageCart.frame = CGRect(x: cart.frame.maxX - 80, y: viewInsideCart.frame.minY, width: 40, height: 40)
+        let redCenter = cart.convert(viewInsideCart.center, to: viewInsideCart)
+
+        numberOfCartLabel.center = redCenter
         cartOut()
         cart.isHidden = false
 
     }
-    override func viewWillAppear(_ animated: Bool) {
-       
-
-    }
     func getFoodType(){
-        
-      
         Firestore.firestore().collection("FoodType").getDocuments { [self] (snap, error) in
             if let error = error {
                 print(#function, error.localizedDescription)
             } else {
-                print(snap)
-                var documents = snap!.documents
+                let documents = snap!.documents
                 group.enter()
 
                 for i in documents{
-                    var data = i.data()
+                    let data = i.data()
                     collections.append(data["name"] as! String)
                     group.enter()
                     getFood(typeFood: data["name"] as! String, completion: {
@@ -118,6 +114,8 @@ class FoodViewController: UIViewController {
             self.cart.frame = CGRect(x: cart.frame.minX, y: CGFloat(offsetY), width: cart.frame.width, height: cart.frame.height)
         }
     }
+    
+    
     func getFood(typeFood: String,completion: @escaping() -> Void){
         
         Firestore.firestore().collection(typeFood).getDocuments { [self]
@@ -160,7 +158,7 @@ class FoodViewController: UIViewController {
             print(response?.suggestedFilename ?? url.lastPathComponent)
             print("Download Finished")
             // always update the UI from the main thread
-            DispatchQueue.main.async() { [weak self] in
+            DispatchQueue.main.async() {  
                 completion(UIImage(data: data) ?? UIImage())
             }
         }
@@ -218,10 +216,10 @@ extension FoodViewController: UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if typeFood.count != 0{
-            var cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
             
             cell.type = currentCollection
-            var array = cartList[currentCollection]?.filter{$0.name == typeFood[currentCollection]![indexPath.row].name}
+            let array = cartList[currentCollection]?.filter{$0.name == typeFood[currentCollection]![indexPath.row].name}
             cell.food = typeFood[currentCollection]![indexPath.row]
             cell.quantity = array?.count ?? 0
             cell.delegate = self
@@ -238,16 +236,12 @@ extension FoodViewController: UITableViewDataSource{
 
 extension FoodViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collections != nil{
-            return collections.count
+        return collections.count
 
-        }else{
-            return 0
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         if indexPath.row == currentActiveIndex{
             cell.view.backgroundColor = .red
         }else{
@@ -282,10 +276,21 @@ extension FoodViewController: clickCell{
 extension FoodViewController: collectionViewCell{
     func typeFood(id: Int, type: String) {
         currentCollection = type
-        var previousActiveIndex = currentActiveIndex
+        let previousActiveIndex = currentActiveIndex
         currentActiveIndex = id
+        var arrayOfIndex : [Int] = []
+        for cell in collectionView.visibleCells {
+               let indexPath = collectionView.indexPath(for: cell)
+               print(indexPath)
+            arrayOfIndex.append(indexPath?.row ?? 0)
+        }
+        if arrayOfIndex.contains(previousActiveIndex){
+            collectionView.reloadItems(at: [IndexPath(item: previousActiveIndex, section: 0),IndexPath(item: currentActiveIndex, section: 0) ])
 
-        collectionView.reloadItems(at: [IndexPath(item: previousActiveIndex, section: 0),IndexPath(item: currentActiveIndex, section: 0) ])
+        }else{
+            collectionView.reloadItems(at: [IndexPath(item: currentActiveIndex, section: 0) ])
+
+        }
 
         changeTable()
            

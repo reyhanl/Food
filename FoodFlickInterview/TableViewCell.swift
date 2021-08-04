@@ -1,22 +1,19 @@
 //
 //  TableViewCell.swift
-//  Sokin
+//  FoodFlickInterview
 //
 //  Created by Reyhan on 03/08/21.
-//  Copyright © 2021 Final Climax. All rights reserved.
+//  Copyright © 2021 Reyhan Muhammad. All rights reserved.
 //
 
 import UIKit
 import FirebaseFirestore
 class TableViewCell: UITableViewCell {
 
-//    @IBOutlet weak var imageView: UIImageView!
-    var delegate: clickCell!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var promoLabel: UILabel!
     @IBOutlet weak var loveButton: UIButton!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var images: UIImageView!
     @IBOutlet weak var normalPriceLabel: UILabel!
@@ -24,6 +21,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
+
+    var delegate: clickCell!
     var type = ""
     var food: Food!{
         didSet{
@@ -51,8 +50,6 @@ class TableViewCell: UITableViewCell {
             
         }
     }
-    var label: UILabel!
-//    var quantityLabel: UILabel!
     var quantity: Int = 0{
         didSet{
             quantityLabel.text = "\(quantity)"
@@ -69,7 +66,6 @@ class TableViewCell: UITableViewCell {
             }
         }
     }
-    var button: UIButton!
    
     override func awakeFromNib() {
         super.awakeFromNib()

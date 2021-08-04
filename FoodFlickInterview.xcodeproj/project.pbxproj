@@ -18,7 +18,6 @@
 		F1E40A9326B95186000649E3 /* FoodFlickInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40A9226B95186000649E3 /* FoodFlickInterviewUITests.swift */; };
 		F1E40AA726B9519B000649E3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40AA326B9519A000649E3 /* TableViewCell.swift */; };
 		F1E40AA826B9519B000649E3 /* FoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E40AA426B9519B000649E3 /* FoodViewController.xib */; };
-		F1E40AA926B9519B000649E3 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40AA526B9519B000649E3 /* FoodViewController.swift */; };
 		F1E40AAA26B9519B000649E3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E40AA626B9519B000649E3 /* TableViewCell.xib */; };
 		F1E40AD326B953B0000649E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E40AD226B953B0000649E3 /* GoogleService-Info.plist */; };
 		F1E40B0926BA169F000649E3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E40B0726BA169F000649E3 /* CollectionViewCell.swift */; };
@@ -62,7 +61,6 @@
 		F1E40A9426B95186000649E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1E40AA326B9519A000649E3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F1E40AA426B9519B000649E3 /* FoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodViewController.xib; sourceTree = "<group>"; };
-		F1E40AA526B9519B000649E3 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		F1E40AA626B9519B000649E3 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F1E40AD226B953B0000649E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1E40B0726BA169F000649E3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				F1E40A7026B9517B000649E3 /* AppDelegate.swift */,
 				F1E40A7226B9517B000649E3 /* SceneDelegate.swift */,
 				F1E40A7426B9517B000649E3 /* ViewController.swift */,
-				F1E40AA526B9519B000649E3 /* FoodViewController.swift */,
 				F1E40AA426B9519B000649E3 /* FoodViewController.xib */,
 				F1E40AA326B9519A000649E3 /* TableViewCell.swift */,
 				F1E40B0726BA169F000649E3 /* CollectionViewCell.swift */,
@@ -352,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E40A7526B9517B000649E3 /* ViewController.swift in Sources */,
-				F1E40AA926B9519B000649E3 /* FoodViewController.swift in Sources */,
 				F1E40B0926BA169F000649E3 /* CollectionViewCell.swift in Sources */,
 				F1E40AA726B9519B000649E3 /* TableViewCell.swift in Sources */,
 				F1E40A7126B9517B000649E3 /* AppDelegate.swift in Sources */,

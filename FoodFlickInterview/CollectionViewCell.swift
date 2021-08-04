@@ -3,7 +3,7 @@
 //  FoodFlickInterview
 //
 //  Created by Reyhan on 04/08/21.
-//
+//  Copyright © 2021 Reyhan Muhammad. All rights reserved.
 
 import UIKit
 
