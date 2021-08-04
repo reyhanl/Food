@@ -1,5 +1,5 @@
 Note:
 
 - You need to add the type of food to Firestore.FoodType before adding a new type of food Collection
-- Since making you having to login kind of like a pain, I decided to assume / pretend that remote Firestore to be like core data which basically means that all of the data inside can
-  edited and owned by current user 
+- Since making you having to login kind of like a pain, I decided to assume / pretend that remote Firestore to be like core data which basically means that 
+  all of the data inside can be edited and owned by current user 
